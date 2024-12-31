@@ -1,6 +1,6 @@
 {
   "name": "useful-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Collection of useful utility functions",
   "main": "dist/index.js",
   "homepage": "https://github.com/Jatin-Bhende/useful-utils",
@@ -19,7 +19,9 @@
     "format": "prettier --write .",
     "check-format": "prettier --check .",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
-    "ci": "npm run build && npm run check-format && npm run check-exports && npm run test"
+    "local-release": "changeset version && changeset publish",
+    "ci": "npm run build && npm run check-format && npm run check-exports && npm run test",
+    "prepublishOnly": "npm run ci"
   },
   "keywords": [
     "utils",
