@@ -13,7 +13,8 @@
 		"url": "git+https://github.com/Jatin-Bhende/useful-utils.git"
 	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"build": "tsc",
+		"ci": "npm run build"
 	},
 	"keywords": [
 		"utils",
@@ -24,5 +25,8 @@
 		"dist"
 	],
 	"type": "module",
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"typescript": "^5.7.2"
+	}
 }
